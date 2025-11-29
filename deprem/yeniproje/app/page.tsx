@@ -13,7 +13,7 @@ export default function Home() {
                 <div className="container flex h-14 items-center justify-between p-4">
                     <div className="flex items-center gap-2">
                         <ActivityIcon className="h-6 w-6 text-primary" />
-                        <h1 className="text-lg font-bold">DepremBilgi</h1>
+                        <h1 className="text-lg font-bold">Acil Deprem</h1>
                     </div>
                     <button
                         className="rounded-full p-2 hover:bg-accent"

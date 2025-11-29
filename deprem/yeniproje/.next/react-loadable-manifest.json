@@ -1,1 +1,23 @@
-{}
+{
+  "app\\deprem-uyari\\page.tsx -> @/components/EarthquakeMap": {
+    "id": "app\\deprem-uyari\\page.tsx -> @/components/EarthquakeMap",
+    "files": [
+      "static/css/_app-pages-browser_components_EarthquakeMap_tsx-_e0120.css",
+      "static/chunks/_app-pages-browser_components_EarthquakeMap_tsx-_e0120.js"
+    ]
+  },
+  "app\\depremler\\[id]\\page.tsx -> @/components/EarthquakeMap": {
+    "id": "app\\depremler\\[id]\\page.tsx -> @/components/EarthquakeMap",
+    "files": [
+      "static/css/_app-pages-browser_components_EarthquakeMap_tsx-_e0120.css",
+      "static/chunks/_app-pages-browser_components_EarthquakeMap_tsx-_e0120.js"
+    ]
+  },
+  "app\\harita\\page.tsx -> @/components/EarthquakeMap": {
+    "id": "app\\harita\\page.tsx -> @/components/EarthquakeMap",
+    "files": [
+      "static/css/_app-pages-browser_components_EarthquakeMap_tsx-_e0121.css",
+      "static/chunks/_app-pages-browser_components_EarthquakeMap_tsx-_e0121.js"
+    ]
+  }
+}

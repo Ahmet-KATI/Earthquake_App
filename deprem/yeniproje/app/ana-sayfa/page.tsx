@@ -54,7 +54,7 @@ export default function HomePage() {
             const permission = await Notification.requestPermission();
             setNotificationPermission(permission);
             if (permission === 'granted') {
-                new Notification('DepremBilgi', {
+                new Notification('Acil Deprem', {
                     body: 'Bildirim izni başarıyla verildi!',
                     icon: '/icon.png'
                 });
@@ -85,7 +85,7 @@ export default function HomePage() {
     const handleShare = () => {
         if (navigator.share) {
             navigator.share({
-                title: 'DepremBilgi',
+                title: 'Acil Deprem',
                 text: 'Türkiye\'deki depremleri anlık takip et!',
                 url: window.location.href
             });
@@ -103,7 +103,7 @@ export default function HomePage() {
                 <div className="container relative px-6 py-12">
                     <div className="flex items-center gap-3 mb-2">
                         <ActivityIcon className="h-10 w-10" />
-                        <h1 className="text-3xl font-black">DepremBilgi</h1>
+                        <h1 className="text-3xl font-black">Acil Deprem</h1>
                     </div>
                     <p className="text-blue-100 text-sm max-w-sm">
                         Türkiye'deki deprem verilerini anlık takip edin ve güvende kalın

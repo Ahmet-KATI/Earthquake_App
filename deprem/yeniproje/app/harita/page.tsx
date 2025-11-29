@@ -6,6 +6,7 @@ import dynamic from "next/dynamic";
 import { ArrowLeft } from "lucide-react";
 import { useRouter } from "next/navigation";
 import BottomNav from "@/components/BottomNav";
+import RiskLegend from "@/components/RiskLegend";
 
 const EarthquakeMap = dynamic(() => import("@/components/EarthquakeMap"), {
     ssr: false,
@@ -47,6 +48,7 @@ export default function MapPage() {
 
             <div className="flex-1 relative z-0">
                 <EarthquakeMap earthquakes={earthquakes} />
+                <RiskLegend />
             </div>
 
             <BottomNav />

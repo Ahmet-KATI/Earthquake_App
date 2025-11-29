@@ -1,4 +1,4 @@
-// File: C:\Users\ahmet\OneDrive\Masaüstü\deprem\yeniproje\app\acil-durum\page.tsx
+// File: C:\Users\ahmet\OneDrive\Masaüstü\Projects\Deprem apps\deprem\yeniproje\app\acil-durum\page.tsx
 import * as entry from '../../../../app/acil-durum/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

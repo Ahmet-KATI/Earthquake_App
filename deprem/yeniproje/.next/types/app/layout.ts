@@ -1,4 +1,4 @@
-// File: C:\Users\ahmet\OneDrive\Masaüstü\deprem\yeniproje\app\layout.tsx
+// File: C:\Users\ahmet\OneDrive\Masaüstü\Projects\Deprem apps\deprem\yeniproje\app\layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

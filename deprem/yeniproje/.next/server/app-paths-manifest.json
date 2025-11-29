@@ -1,7 +1,10 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/ayarlar/page": "app/ayarlar/page.js",
+  "/harita/page": "app/harita/page.js",
   "/ana-sayfa/page": "app/ana-sayfa/page.js",
-  "/acil-durum/page": "app/acil-durum/page.js",
-  "/page": "app/page.js"
+  "/depremler/[id]/page": "app/depremler/[id]/page.js",
+  "/page": "app/page.js",
+  "/deprem-uyari/page": "app/deprem-uyari/page.js",
+  "/ayarlar/page": "app/ayarlar/page.js",
+  "/acil-durum/page": "app/acil-durum/page.js"
 }

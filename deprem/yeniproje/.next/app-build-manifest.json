@@ -1,15 +1,20 @@
 {
   "pages": {
-    "/ayarlar/page": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/ayarlar/page.js"
+      "static/chunks/app/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
+    ],
+    "/harita/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/harita/page.js"
     ],
     "/ana-sayfa/page": [
       "static/chunks/webpack.js",
@@ -21,10 +26,20 @@
       "static/chunks/main-app.js",
       "static/chunks/app/acil-durum/page.js"
     ],
-    "/page": [
+    "/ayarlar/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+      "static/chunks/app/ayarlar/page.js"
+    ],
+    "/depremler/[id]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/depremler/[id]/page.js"
+    ],
+    "/deprem-uyari/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/deprem-uyari/page.js"
     ],
     "/_not-found/page": [
       "static/chunks/webpack.js",
