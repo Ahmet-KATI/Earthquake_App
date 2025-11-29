@@ -1,0 +1,65 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model User {
+  id            String    @id @default(cuid())
+  phoneNumber   String?   @unique
+  email         String?   @unique
+  password      String?   // Hashed password
+  name          String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  
+  // Settings
+  minMagnitude  Float     @default(3.0)
+  radiusKm      Int       @default(100)
+  notifications Boolean   @default(true)
+  
+  // Relations
+  alarms        Alarm[]
+  reports       Report[]
+}
+
+model Earthquake {
+  id          String   @id // External ID from provider
+  provider    String   // AFAD, Kandilli, USGS
+  location    String
+  latitude    Float
+  longitude   Float
+  magnitude   Float
+  depth       Float
+  date        DateTime
+  createdAt   DateTime @default(now())
+}
+
+model Alarm {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id])
+  city      String?
+  latitude  Float?
+  longitude Float?
+  radius    Int      @default(50) // km
+  minMag    Float    @default(4.0)
+  createdAt DateTime @default(now())
+}
+
+model Report {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id])
+  type      String   // "SAFE", "HELP", "FELT"
+  message   String?
+  latitude  Float?
+  longitude Float?
+  createdAt DateTime @default(now())
+}
